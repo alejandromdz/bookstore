@@ -20,6 +20,6 @@
   },
   "scripts": {
     "start": "SET NODE_ENV=dev && node server.js",
-    "test": "istanbul cover node_modules/.bin/mocha -- -R spec --timeout 10000"
+    "test": "istanbul cover node_modules/.bin/_mocha -- -R spec --timeout 10000"
   }
 }
