@@ -15,10 +15,11 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
+    "istanbul": "^0.4.5",
     "mocha": "^2.4.5"
   },
   "scripts": {
     "start": "SET NODE_ENV=dev && node server.js",
-    "test": "mocha --timeout 10000"
+    "test": "istanbul cover node_modules/.bin/mocha -- -R spec --timeout 10000"
   }
 }
