@@ -1,6 +1,10 @@
+# Continuous Integration
 language: node_js
 services:
     - mongodb
 node_js:
     - '6.9.4'
 script: npm run test
+# Code Coverage 
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
