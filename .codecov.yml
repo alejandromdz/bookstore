@@ -1,5 +1,3 @@
-install:
-  - npm install -g codecov
 script:
   - nyc mocha --timeout 1000
   - codecov
