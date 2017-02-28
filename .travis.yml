@@ -8,3 +8,4 @@ script: npm run test
 # Code Coverage 
 after_success:
     - bash <(curl -s https://codecov.io/bash)
+    
